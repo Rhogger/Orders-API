@@ -15,6 +15,6 @@ public class PedidosController : ControllerBase
   [HttpPost(Name = "Pedido")]
   public IActionResult Pedido([FromBody] Pedido pedido)
   {
-
+    return CreatedAtAction(nameof(Pedido), "Dados recebidos");
   }
 }
