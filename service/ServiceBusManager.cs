@@ -19,11 +19,4 @@ public class ServiceBusManager
     }
 }
 
-// string connectionString = "Endpoint=sb://pedidovenda.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=DZVvHjAc/NQS5fAXAZO2c9uEyAIRFzTkF+ASbLF3kFA=";
-// ServiceBusManager busManager = new ServiceBusManager(connectionString);
 
-// // Enviar para a fila de expedição
-// await busManager.SendMessageAsync("expedicaomercadoria", "Mensagem de expedição");
-
-// // Enviar para a fila de notificação de faturamento
-// await busManager.SendMessageAsync("notificarfaturamento", "Mensagem de notificação de faturamento");
