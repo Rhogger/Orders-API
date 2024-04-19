@@ -1,3 +1,4 @@
+using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 
 [ApiController]
@@ -15,6 +16,12 @@ public class PedidosController : ControllerBase
   [HttpPost(Name = "Pedido")]
   public IActionResult Pedido([FromBody] Pedido pedido)
   {
+    ProcessaPedido processaPedido = new ProcessaPedido();
+
+    processaPedido.Registrar(new Expedicao());
+    processaPedido.Registrar(new Faturamento());
+    processaPedido.Notificacao();
+
     return CreatedAtAction(nameof(Pedido), "Dados recebidos");
   }
 }

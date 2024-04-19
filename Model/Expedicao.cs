@@ -1,6 +1,9 @@
 public class Expedicao : IObservador
 {
-    public void Enviar(IObservavel observavel){
-        await busManager.SendMessageAsync("expedicaomercadoria", "Mensagem de expedição");
+    public async void Enviar(IObservavel observavel)
+    {
+        var serviceBusManager = new ServiceBusManager("Endpoint=sb://pedidovenda.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=DZVvHjAc/NQS5fAXAZO2c9uEyAIRFzTkF+ASbLF3kFA=");
+
+        await serviceBusManager.SendMessageAsync("expedicaomercadoria", "Mensagem de expedição");
     }
 }
