@@ -1,4 +1,4 @@
 public interface IObservador
 {
-    public void Notificar(IObservavel observavel);
+    public void Enviar(IObservavel observavel);
 }
