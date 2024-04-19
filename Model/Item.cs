@@ -1,8 +1,8 @@
 public class Item
 {
-    public string Codigo { get; set; }
-    public string Descricao { get; set; }
-    public double Valor_Unitario { get; set; }
-    public int Quantidade { get; set; }
-    public double Valor_Total { get; set; }
+    public string codigo { get; set; }
+    public string descricao { get; set; }
+    public double valorUnitario { get; set; }
+    public int quantidade { get; set; }
+    public double valorTotal { get; set; }
 }

@@ -1,10 +1,10 @@
 public class Pedido
 {
-    public string CGC_Cliente { get; set; }
-    public string Nome { get; set; }
-    public string Forma_de_Pagamento { get; set; }
-    public string Data_de_Entrega { get; set; }
-    public double Valor_Total { get; set; }
-    public int Quantidade_de_Itens { get; set; }
-    public List<Item> Lista_de_Itens { get; set; }
+    public string cgcCliente { get; set; }
+    public string nome { get; set; }
+    public string formaPagamento { get; set; }
+    public string dataEntrega { get; set; }
+    public double valorTotal { get; set; }
+    public int quantidadeItens { get; set; }
+    public List<Item> itens { get; set; }
 }
